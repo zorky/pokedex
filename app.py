@@ -1,6 +1,5 @@
-from fastapi import FastAPI, HTTPException
+from fastapi import FastAPI, HTTPException, APIRouter
 from fastapi.responses import HTMLResponse
-from fastapi.staticfiles import StaticFiles
 import httpx
 
 app = FastAPI(title="Pokédex API", description="Application Pokémon utilisant PokeAPI")
@@ -9,7 +8,10 @@ app = FastAPI(title="Pokédex API", description="Application Pokémon utilisant 
 client = httpx.AsyncClient(timeout=30.0)
 
 POKEAPI_BASE = "https://pokeapi.co/api/v2"
+BASE_APP_URL = ""
+# BASE_APP_URL = "/pokedex"  # Décommentez cette ligne si l'application est servie sous un sous-chemin
 
+router = APIRouter(prefix=BASE_APP_URL)
 
 @app.get("/", response_class=HTMLResponse)
 async def root():
