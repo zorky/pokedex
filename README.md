@@ -2,8 +2,10 @@
 
 Générée avec Claude.ai en 1 minute, avec le prompt 
 
-"Utilise la Pokeapi pour créer une web app avec toutes les infos sur les pokemons
+```
+Utilise la Pokeapi pour créer une web app avec toutes les infos sur les pokemons
 Stack : python et framework backend FastAPI"
+```
 
 Le chat Claude.ai : https://claude.ai/share/61c008e6-8548-4fa8-bbc7-3355324d3b6b 
 
