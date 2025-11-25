@@ -32,7 +32,7 @@ INFO:     Waiting for application startup.
 INFO:     Application startup complete.
 ```
 
-Ouvrir http://localhost:8000 - la web app apparait
+Ouvrir http://localhost:8377 - la web app apparait
 
 ![app-landing-page.png](app-landing-page.png "Landing")
 
