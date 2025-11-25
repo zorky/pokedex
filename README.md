@@ -20,7 +20,7 @@ ou
 $ source .venv/bin/activate # Linux / MacOS
 ```
 
-## Lancement
+## Lancement en local
 
 ```bash
 $ python app.py
@@ -36,3 +36,10 @@ Ouvrir http://localhost:8000 - la web app apparait
 
 ![app-landing-page.png](app-landing-page.png "Landing")
 
+## Améliorations apportées post génération
+
+Pour exécuter cette web app, les ajustements qui ont été apportées :
+
+- ajout d'uv 
+- un template Jinja2 pour le frontend
+- .env pour la variable BASE_APP_URL et la route de base pour l'appel de l'API FastAPI (différe entre le localhost et la location sur un VPS)
