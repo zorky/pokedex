@@ -9,6 +9,17 @@ Stack : python et framework backend FastAPI"
 
 Le chat Claude.ai : https://claude.ai/share/61c008e6-8548-4fa8-bbc7-3355324d3b6b 
 
+## Initialisation .env
+
+Copier le `.env.example` sur `.env` 
+
+```bash
+$ cp .env.example .env
+```
+
+le `.env` contient :
+
+BASE_APP_URL=""
 
 ## Avec docker
 
@@ -26,7 +37,7 @@ $ docker compose up
 
 Ouvrir http://localhost:8377 - la web app apparait
 
-## Isntallation et lancement en local en venv
+## Installation et lancement en local en venv
 
 ### uv en venv
 
