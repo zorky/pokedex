@@ -10,16 +10,6 @@ Stack : python et framework backend FastAPI"
 Le chat Claude.ai : https://claude.ai/share/61c008e6-8548-4fa8-bbc7-3355324d3b6b 
 
 
-## Avec uv en venv
-
-```bash
-$ uv sync
-
-$ source .venv/Scripts/Activate # Windows
-ou 
-$ source .venv/bin/activate # Linux / MacOS
-```
-
 ## Avec docker
 
 Build 
@@ -36,7 +26,19 @@ $ docker compose up
 
 Ouvrir http://localhost:8377 - la web app apparait
 
-## Lancement en local en venv
+## Isntallation et lancement en local en venv
+
+### uv en venv
+
+```bash
+$ uv sync
+
+$ source .venv/Scripts/Activate # Windows
+ou 
+$ source .venv/bin/activate # Linux / MacOS
+```
+
+### Lancement
 
 ```bash
 $ python app.py
