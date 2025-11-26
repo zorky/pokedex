@@ -10,7 +10,7 @@ Stack : python et framework backend FastAPI"
 Le chat Claude.ai : https://claude.ai/share/61c008e6-8548-4fa8-bbc7-3355324d3b6b 
 
 
-## Installation avec uv
+## Avec uv en venv
 
 ```bash
 $ uv sync
@@ -20,12 +20,28 @@ ou
 $ source .venv/bin/activate # Linux / MacOS
 ```
 
-## Lancement en local
+## Avec docker
+
+Build 
+
+```bash
+$ docker compose build
+```
+
+Lancement 
+
+```bash
+$ docker compose up
+```
+
+Ouvrir http://localhost:8377 - la web app apparait
+
+## Lancement en local en venv
 
 ```bash
 $ python app.py
 INFO:     Will watch for changes in these directories: ['*****']
-INFO:     Uvicorn running on http://127.0.0.1:8000 (Press CTRL+C to quit)
+INFO:     Uvicorn running on http://0.0.0.1:8377 (Press CTRL+C to quit)
 INFO:     Started reloader process [23664] using StatReload
 INFO:     Started server process [26972]
 INFO:     Waiting for application startup.

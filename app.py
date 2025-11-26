@@ -16,6 +16,10 @@ load_dotenv()
 POKEAPI_BASE = "https://pokeapi.co/api/v2"
 BASE_APP_URL = os.getenv("BASE_APP_URL", "")
 
+HOST="0.0.0.0"
+PORT=8377
+# HOST="127.0.0.1"
+
 router = APIRouter(prefix=BASE_APP_URL)
 templates = Jinja2Templates(directory="templates")
 
@@ -134,7 +138,8 @@ async def shutdown():
     await client.aclose()
 
 
-if __name__ == "__main__":
+if __name__ == "__main__": # pour lancement en venv local hors docker
     import uvicorn
-    uvicorn.run("app:app", host="127.0.0.1", port=8377, reload=True)
+    reload = os.getenv("ENVIRONMENT") == "development"    
+    uvicorn.run("app:app", host=HOST, port=PORT, reload=reload)
     
